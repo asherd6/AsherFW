@@ -106,7 +106,7 @@
 								</goals>
                <configuration>
                   <suiteXmlFiles>
-                     <suiteXmlFile>g.xml</suiteXmlFile>
+                     <suiteXmlFile>${ng}/${TEST_NG_FILE}</suiteXmlFile>
                      
                   </suiteXmlFiles>
                </configuration>
