@@ -24,7 +24,10 @@ import org.testng.annotations.AfterSuite;
 public class NewTest {
   @Test(dataProvider = "dp")
   public void f(Integer n, String s) throws IOException {
+		 System.setProperty("webdriver.gecko.driver", "D:\\drivers\\geckodriver.exe");
+
 	  WebDriver driver = new FirefoxDriver();
+	  
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("http://www.echoecho.com/htmlforms10.htm");
 		

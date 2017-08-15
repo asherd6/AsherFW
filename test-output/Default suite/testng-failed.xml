@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.mycompany.framework.com.mycompany.framework.ApplicationTest">
+      <class name="com.mycompany.framework.com.mycompany.framework.NewTest">
         <methods>
-          <include name="sblogin"/>
+          <include name="beforeClass"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- com.mycompany.framework.com.mycompany.framework.ApplicationTest -->
+      </class> <!-- com.mycompany.framework.com.mycompany.framework.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
