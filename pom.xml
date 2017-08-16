@@ -79,41 +79,22 @@
 
       
          <plugins>
-         	<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-antrun-plugin</artifactId>
-						<version>1.7</version>
-						
-						
-								<goals>
-									<goal>run</goal>
-								</goals>
-								<configuration>
-									<target>
-										<!-- <echoproperties /> -->
-									
-										<echo>TESTNG_FILE= ${TESTNG_FILE}</echo>
-									</target>
-								</configuration>
-					
-					</plugin>
+         	
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-surefire-plugin</artifactId>
-               <version>2.12.4</version>
+               <version>2.20</version>
                	<goals>
 									<goal>test</goal>
 								</goals>
                <configuration>
                   <suiteXmlFiles>
-                     <suiteXmlFile>${ng}/${TEST_NG_FILE}</suiteXmlFile>
-                     
+                    <suiteXmlFile>C:\jenkins_slave\workspace\job2\src\test\java\com\mycompany\framework\com\mycompany\framework\testxml.xml</suiteXmlFile>
                   </suiteXmlFiles>
                </configuration>
             </plugin>     
          </plugins>
       </build>
-
 
 
  
