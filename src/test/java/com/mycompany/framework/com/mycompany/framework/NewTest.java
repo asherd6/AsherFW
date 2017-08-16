@@ -27,7 +27,7 @@ public class NewTest {
 		 System.setProperty("webdriver.gecko.driver", "D:\\drivers\\geckodriver.exe");
 
 	  WebDriver driver = new FirefoxDriver();
-	  
+	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("http://www.echoecho.com/htmlforms10.htm");
 		
